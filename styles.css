@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* фон */
+body {
+  background-color: lightblue;
+  user-select: none;
+}
+/* скалолаза и горы div */
+#mountain {
+  width: 100%;/*чтобы не вылазил за страницу:-)*/
+  position: relative;
+}
+/* скалолаз */
+#climber {
+  width: 3%;
+  position: absolute;
+  left: 13%;
+  bottom: 6%;
+  z-index: 120;
+}
+/* gif */
+#flag {
+  width: 3%;
+  position: absolute;
+  right: 25%;
+  top: -8%;
+}
+/* гора */
+#mountains {
+  position: absolute;
+  bottom: 0;
+}
+/* ступеньки */
+.markup {
+  width: 2%;
+  height: 6px;
+  max-height: 1%;
+  position: absolute;
+  background-color: rgb(19, 133, 29);
+}
+/* позиции ступенек чтобы при разрешении разном не багало */
+#oneMarkup {
+  top: 76%;
+  margin-left: 13%;
+}
+#twoMarkup {
+  top: 56%;
+  margin-left: 18%;
+}
+#threeMarkup {
+  top: 34%;
+  margin-left: 25%;
+}
+#fourMarkup {
+  top: 30%;
+  margin-left: 35%;
+}
+#fiveMarkup {
+  top: 10%;
+  margin-left: 42%;
+}
+#sixMarkup {
+  top: 26%;
+  margin-left: 50%;
+}
+#sevenMarkup {
+  top: 46%;
+  margin-left: 56%;
+}
+#eightMarkup {
+  top: 54%;
+  margin-left: 65%;
+}
+#nineMarkup {
+  top: 28%;
+  margin-left: 69%;
+}
+#tenMarkup {
+  top: 3%;
+  margin-left: 73.5%;
+}
+
+.support {
+  position: fixed;
+  box-sizing: border-box;
+  left: -300px;
+  top: 50px;
+  width: 300px;
+  height: 185px;
+  background-color: rgb(0, 255, 132);
+  border: 5px solid rgb(215, 167, 78);
+  border-radius: 0 0 10px 0;
+  text-align: center;
+  transition: margin-left 1s;
+  z-index: 100;
+  cursor: default;
+}
+
+.support::after {
+  content: 'Помощь';
+  position: absolute;
+  padding-top: 10px;
+  width: 80px;
+  height: 25px;
+  left: 268px;
+  top: 18px;
+  background-color: rgb(219, 150, 21);
+  transform: rotate(-90deg);
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+  border-bottom: 2px solid rgb(0, 255, 132);
+  border-left: 2px solid rgb(0, 255, 132);
+  border-right: 2px solid rgb(0, 255, 132);
+}
+
+.support:hover {
+  margin-left: 300px;
+  transition: margin-left 1s;
+}
+
+.note {
+  text-align: left;
+  margin-left: 15px;
+}
+
+.support p {
+  margin-bottom: 5px;
+}
+
+/*   Counter & Start */
+
+.start, .counter {
+  margin-top: 30px;
+  width: 100px;
+  height: 80px;
+  background-color: rgb(0, 255, 132);
+  box-sizing: border-box;
+  border: 5px solid rgb(215, 167, 78);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(91, 19, 19);
+  cursor: default;
+  user-select: none;
+}
+.start {
+  margin-right: 20px;
+  width: 130px;
+  font-size: 35px;
+}
+/* .complexity {
+} */
+select {
+  height: 50px;
+  margin: 40px 20px 0 0;
+  border: 5px solid rgb(215, 167, 78);
+  border-radius: 15px;
+  background-color: rgb(0, 255, 132);
+  color: rgb(91, 19, 19);
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.rock {
+  width: 3%;
+  position: absolute;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-timing-function: cubic-bezier(0.42,0,1,1);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  z-index: 150;
+}
+
+@keyframes rock1{
+  from {bottom: 27%;}
+  to {bottom: 0%;}
+}
+@keyframes rock2{
+  from {bottom: 46%;}
+  to {bottom: 0%;}
+}
+@keyframes rock3{
+  from {bottom: 67%;}
+  to {bottom: 0%;}
+}
+@keyframes rock4{
+  from {bottom: 72%;}
+  to {bottom: 0%;}
+}
+@keyframes rock5{
+  from {bottom: 92%;}
+  to {bottom: 0%;}
+}
+@keyframes rock6{
+  from {bottom: 76%;}
+  to {bottom: 0%;}
+}
+@keyframes rock7{
+  from {bottom: 56%;}
+  to {bottom: 0%;}
+}
+@keyframes rock8{
+  from {bottom: 47%;}
+  to {bottom: 0%;}
+}
+@keyframes rock9{
+  from {bottom: 75%;}
+  to {bottom: 0%;}
+}
+@keyframes rock10{
+  from {bottom: 99%;}
+  to {bottom: 0%;}
+}
